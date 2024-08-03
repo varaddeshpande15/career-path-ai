@@ -3,14 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-
+import Main from './components/Home'
+import Home from './components/Home'
+import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello World</h1>
+      <h1></h1>
       <Navbar/>
+      <Home/>
     </>
   )
 }
