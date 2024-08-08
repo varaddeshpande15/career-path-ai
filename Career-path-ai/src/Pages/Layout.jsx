@@ -7,7 +7,7 @@ function Layout() {
     <div>
         <Navbar/>
         <Outlet/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
