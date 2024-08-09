@@ -10,6 +10,8 @@ import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import './index.css';
 import Layout from './Pages/Layout';
+
+import { Auth0Provider } from '@auth0/auth0-react';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -33,7 +35,15 @@ const router = createBrowserRouter(
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <Auth0Provider
+    domain="dev-5w5lnpfdgvkwnrdj.us.auth0.com"
+    clientId="FpwCYxr6xIrEzN4HKf49jMpcEQirHTCR"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
+  </Auth0Provider>
 );

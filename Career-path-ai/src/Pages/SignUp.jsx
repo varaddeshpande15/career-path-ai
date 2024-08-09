@@ -3,17 +3,12 @@ import { InputDemo } from '../components/Email';
 import ThreeDButton from '@/assets/Buttons/Button';
 
 function SignUp() {
-  // State for form inputs
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   async function submit(e) {
     e.preventDefault();
-
-    // Process form submission here (e.g., send data to an API)
-
-    // Clear the input fields by resetting state
     setName('');
     setEmail('');
     setPassword('');
