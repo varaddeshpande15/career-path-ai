@@ -2,7 +2,7 @@ import React from 'react'
 
 function Solution() {
   return (
-    <div>Solution</div>
+    <div className='text-white text-3xl'>Solution</div>
   )
 }
 
